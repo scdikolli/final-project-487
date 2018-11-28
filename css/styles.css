@@ -3,7 +3,7 @@
 .site {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 300px 300px 300px 300px 400px 300px 300px 300px 300px 300px;
   grid-template-areas:
   'hd hd hd hd hd hd hd hd hd'
   '. c1 c1 c1 c1 c1 c1 c1 .'
