@@ -2,7 +2,7 @@ $(document).ready(function(){
   console.log('scripts loaded');
   });
 
-//Youtube API
+//start Youtube API
   // 2. This code loads the IFrame Player API code asynchronously.
        var tag = document.createElement('script');
 
@@ -44,3 +44,16 @@ $(document).ready(function(){
          player.stopVideo();
        }
 //end Youtube API
+
+//start Google Maps API
+// Initialize and add the map
+function initMap() {
+  // The location of Glendale
+  var glendale = {lat: 33.5275, lng: -112.2625};
+  // The map, centered at Glendale
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: glendale});
+  // The marker, positioned at Glendale
+  var marker = new google.maps.Marker({position: glendale, map: map});
+}
+//end Google Maps API
