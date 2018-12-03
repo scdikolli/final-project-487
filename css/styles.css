@@ -46,6 +46,20 @@ border: 5px solid red;
   border: 5px solid red;
 }
 
+.track-cards{
+  border: 1px solid blue;
+  padding: 10px;
+  margin: 10px;
+}
+
+.track-title{
+  flex-basis: 80%;
+}
+
+.track-lyrics-link{
+  flex-basis: 20%;
+}
+
 /* Copy 2 */
 .copy-2{
   grid-area: c2;
