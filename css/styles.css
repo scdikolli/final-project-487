@@ -3,16 +3,18 @@
 .site {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: 300px 300px 300px 300px 400px 300px 300px 300px 300px 300px;
+  grid-template-rows: auto;
   grid-template-areas:
   'hd hd hd hd hd hd hd hd hd'
+  '. inttxt inttxt inttxt inttxt inttxt inttxt inttxt . '
   '. c1 c1 c1 c1 c1 c1 c1 .'
-  '. ly ly ly ly ly ly ly .'
   '. c2 c2 c2 c2 c2 c2 c2 .'
-  '. vid vid vid vid vid vid vid .'
-  '. c3 c3 c3 c3 c3 c3 c3 .'
   '. mp mp mp mp mp mp mp .'
-  '. con con con con con con con .';
+  '. c3 c3 c3 c3 c3 c3 c3 .'
+  '. ly ly ly ly ly ly ly .'
+  '. con con con con con con con .'
+  '. vid vid vid vid vid vid vid .'
+  '. srcs srcs srcs srcs srcs srcs srcs.';
 }
 
 
@@ -24,8 +26,13 @@
 }
 
 h1{
-  color: red;
-  font-size: 10px;
+  color: white;
+  font-size: 50px;
+}
+
+h2{
+  color: white;
+  font-size: 30px;
 }
 
 /* Header */
@@ -34,6 +41,19 @@ h1{
 border: 5px solid red;
 }
 
+.background-image {
+  background-image: url("/img/tay-rep.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 500px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+/* Intro Text */
+
+.intro-text{
+  grid-area: inttxt;
+}
 /* Copy 1 */
 .copy-1{
   grid-area: c1;
@@ -94,6 +114,10 @@ border: 5px solid red;
 .copy-conclusion{
   grid-area: con;
 border: 5px solid red;
+}
+
+.sources{
+  grid-area:srcs;
 }
 
 }
