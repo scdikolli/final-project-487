@@ -121,3 +121,26 @@ border: 5px solid red;
 }
 
 }
+
+@media screen and (max-width:768px){
+  .site{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, auto);
+    grid-template-areas:
+    'hd'
+    'inttxt'
+    'c1'
+    'c2'
+    'mp'
+    'c3'
+    'ly'
+    'con'
+    'vid'
+    'srcs';
+  }
+
+
+
+
+
+}
