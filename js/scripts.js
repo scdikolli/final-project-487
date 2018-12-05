@@ -493,7 +493,8 @@ function initMap() {
 //end Google Maps API
 
 //start Music API
- var url = 'https://api.musixmatch.com/ws/1.1/album.tracks.get?format=jsonp&callback=callback&album_id=26806100&apikey=4f16df4711bb025849083471398b8803';
+  var myKey = config.MY_API_KEY;
+ var url = 'https://api.musixmatch.com/ws/1.1/album.tracks.get?format=jsonp&callback=callback&album_id=26806100&apikey=' + myKey;
  var data = [];
  var albums = [];
  var html = '';
@@ -533,7 +534,7 @@ function initMap() {
 
 //Typewriter Plugin
 new TypeIt('#element', {
-  strings: ["7 months.", "38 shows.", "Over 2 million tickets sold.", "The highest-grossing tour in U.S. history."],
+  strings: ["26 cities.", "38 shows.", "Over 2 million tickets sold.", "The highest-grossing tour in U.S. history."],
   speed: 75,
   autoStart:false
 })
