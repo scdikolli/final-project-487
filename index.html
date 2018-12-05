@@ -7,6 +7,8 @@
   <meta name="author" content="John Doe">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Final Project</title>
+  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" type="text/css"/>
   <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.7/dist/typeit.min.js" ></script>
 
@@ -15,72 +17,112 @@
 <body class="site">
 
   <div class="header background-image">
-
-
-
-    <h1>The revival of the snakes</h1>
-    <h2>A look into the reputation Staidum tour</h2>
+    <h1 id="title">The rise of the snakes</h1>
+    <h2 id="subtitle">An insider look into the Reputation Staidum Tour</h2>
   </div>
 
-  <div class="intro-text">
+  <div class="intro-text flex">
       <p id="element"></p>
   </div>
 
-  <div class="copy-1">  
+  <!-- <div id="slideshow">
+    <img src="img/tay-rep.jpg" style="position:absolute;" class="active" />
+    <img src="img/tay2-rep.jpeg" style="position:absolute;" />
+  </div> -->
+
+  <div class="copy-1 flex">
+    <h3>About the Tour</h3>
     <p>
-      From May 8th – October 6th, Taylor Swift performed the Reputation stadium tour across America. Swift traveled to ____ states, highlighting major cities including Glendale, Arizona, East Rutherford, New Jersey, Atlanta, Georgia, and Arlington, Texas. On November 30th, the tour was announced as the highest-grossing in American history, grossing over $250 million from more than 2 million tickets sold to fans across the country.
+      From May 8th – October 6th, Taylor Swift performed the Reputation Stadium Tour across America. Swift traveled to 22 states, highlighting major cities including Glendale, Arizona, East Rutherford, New Jersey, Atlanta, Georgia, and Arlington, Texas. On November 30th, the tour was announced as the highest-grossing in American history, grossing over $250 million from more than 2 million tickets sold to fans across the country.
+    </p>
+    <img id="stage-snake" src="img/stage-snake.jpg" />
+  </div>
+
+  <div class="copy-2 flex">
+    <p>
+      The Reputation Stadium Tour consisted of 38 shows across 26 different cities in the country. Most notable about these tour stops are the chosen venues. The smallest venue for the Reputation Stadium Tour was Hard Rock Stadium in Miami Gardens, Florida with a capacity of just over 47,000 people. The largest venue? Gillette Stadium, which held three different shows for the star, in Foxborough, Massachusetts holding a maximum capacity of 174,000.
+    </p>
+
+    <p>
+      Check out the interactive map below to follow Swift's tour path across America.
     </p>
   </div>
 
-  <div class="copy-2">
-    <p>
-      The Reputation stadium tour consisted of 38 shows across _____ different cities in the country. Most notable about these tour stops are the chosen venues. The small venue for the Reputation stadium tour was Hard Rock Stadium in Miami Gardens, Florida with a capacity of just over 47,000 people. The largest venue? Gillette Stadium in Foxborough, Massachusetts holding a maximum capacity of 174,000.
-    </p>
-
-    <p>
-      In past U.S. tours, Swift has
-    </p>
-
-    <p>
-      Check out the interactive map below to follow Taylor’s tour path across America.
-    </p>
-  </div>
-
-  <div class="googlemaps-api">
-    <h3>My Google Maps Demo</h3>
+  <div class="googlemaps-api flex">
+    <h3>The Tour Venues Across America</h3>
     <!--The div element for the map -->
     <div id="map"></div>
     <div id="info-section"></div>
 
   </div>
 
-
-  <div class="copy-3">
+  <div class="copy-3 flex">
     <p>
-      Out of the 16 songs on the Reputation album, the Reputation stadium tour included 15. Hit singles from the album and in the show included Gorgeous, Call It What You Want, and Look What You Made Me Do. During its debut week, Reputation earned the highest-selling week of 2017 and quickly became the best-selling album of the year, surpassing Ed Sheeran’s ÷. Find the lyrics of each song off the Reputation album below by clicking the link of each song title.
+      Out of the 16 songs on the Reputation album, the Reputation Stadium Tour included 15. Hit singles from the album and in the show included Gorgeous, Call It What You Want, and Look What You Made Me Do. During its debut week, Reputation earned the highest-selling week of 2017 and quickly became the best-selling album of the year, surpassing Ed Sheeran’s ÷.
+    </p>
+    <p>
+      Find the lyrics of each song on the Reputation album below by clicking the link of each song title.
     </p>
   </div>
 
-  <div class="lyrics-api">
+  <div class="lyrics-api flex">
+      <h3>The reputation Lyrics</h3>
     <div id="results"></div>
-
   </div>
 
-
-  <div class="copy-conclusion">
+  <div class="copy-conclusion flex">
     <p>
-      The reputation Stadium tour Taylor focused the show on a single theme: reputation. The main and reoccurring symbol for this theme? Snakes. The show featured a number of snake-designed props in the production, most notably the larger than life snake structure that rises from the stage during the performance of Look What You Made Me Do. The theme refers to the now infamous time when celebrity icon Kim Kardashian called Swift a snake through social media in 2016. The snake even has a name: Karen. Check out the following video of the Look What You Made Me Do show performance to see Karen in action.
-    </p>
+      Critics have described the show as "the most fun I have ever had", "amazingly intimate", and "an exercise in expectation fulfillment".
 
-    <h5 id="snake-quote">“And I guess the snakes, I wanted to send a message to you guys that if someone uses name-calling to bully you on social media and even if a lot of people jump on board with it, that doesn’t have to defeat you. It can strengthen you instead.”</h5>
+      <p>
+        "This might be her most astounding tour yet – even when she’s aiming for maximum stadium-rock razzle-dazzle bombast, she gives it all the vibe of a mass communion." -Rolling Stone
+      </p>
+
+      <p>
+        Enough talk? Think you're ...Ready For it? Check out the video below for a complete trailer of the Reputation Stadium Tour.
+      </p>
   </div>
 
-  <div class="youtube-api">
+  <div class="youtube-api flex">
     <div id="player"></div>
   </div>
 
+  <div class="quote flex">
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+      <div class="flipper">
+        <div class="front">
+          <h5>So, what is the deal with the "snake" theme?</h5>
+        </div>
+        <div class="back">
+          <h5 id="snake-quote">“And I guess the snakes, I wanted to send a message to you guys that if someone uses name-calling to bully you on social media and even if a lot of people jump on board with it, that doesn’t have to defeat you. It can strengthen you instead.” <br /><br />-Taylor Swift</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="sources">
-    <h6>These are my sources.</h6>
+    <button class="accordion">Sources</button>
+      <div class="panel">
+        <ul style="list-style-type:circle">
+          <li>https://www.forbes.com/sites/brittanyhodak/2018/11/30/taylor-swift-breaks-u-s-record-with-reputation-stadium-tour/#44cb6adf348e</li>
+          <li>https://variety.com/2018/music/reviews/concert-review-taylor-swift-soars-at-reputation-tours-dublin-date-1202848882//li>
+          <li>https://en.wikipedia.org/wiki/Taylor_Swift%27s_Reputation_Stadium_Tour</li>
+          <li>https://www.billboard.com/articles/columns/chart-beat/8039679/taylor-swift-reputation-debuts-no-1-billboard-200-albums</li>
+          <li>https://www.spin.com/2018/05/taylor-swift-snake-kim-kardashian-reputation-tour-opener-video/</li>
+          <li>
+            https://www.rollingstone.com/music/music-live-reviews/why-taylor-swifts-reputation-tour-is-her-finest-yet-628294/
+          </li>
+          <li>
+            https://hellogiggles.com/reviews-coverage/taylor-swift-reputation-tour-review/
+          </li>
+          <li>
+            https://www.theguardian.com/music/2018/oct/20/taylor-swift-review-tour-shows-a-star-and-reputation-still-in-ascendance
+          </li>
+          <li>
+            https://www.washingtonpost.com/lifestyle/style/step-inside-the-taylor-swift-biodome/2018/07/11/d87ecfd0-8516-11e8-8553-a3ce89036c78_story.html?utm_term=.738f843f710e
+          </li>
+        </ul>
+      </div>
   </div>
 
 
