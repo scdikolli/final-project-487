@@ -15,7 +15,7 @@ $(document).ready(function(){
        var player;
        function onYouTubeIframeAPIReady() {
          player = new YT.Player('player', {
-           height: '300%',
+           height: '250%',
            width: '100%',
            videoId: 'RMW3fAructY',
            events: {

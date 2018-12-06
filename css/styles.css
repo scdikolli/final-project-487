@@ -3,7 +3,7 @@
 .site {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: 100px, 100px, 100px, 100px, 100px, 100px, 100px, 100px, 100px, 300px, 100px;
+  grid-template-rows: auto;
   grid-template-areas:
   'hd hd hd hd hd hd hd hd hd'
   '. inttxt inttxt inttxt inttxt inttxt inttxt inttxt . '
@@ -16,7 +16,7 @@
   '. vid vid vid vid vid vid vid .'
   '. quo quo quo quo quo quo quo .'
   '. srcs srcs srcs srcs srcs srcs srcs.';
-background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
+  background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
 }
 
 
@@ -28,26 +28,28 @@ background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%);
 }
 
 h1{
-  color: #fff;
+  color: #a90329;
   font-size: 50px;
   font-family: 'Bungee', sans-serif;
 }
 
 h2{
-  color: white;
-  font-size: 30px;
+  color: #fff;
+  font-size: 40px;
   font-family: 'Questrial', sans-serif;
 }
 
 h3{
   font-family: 'Bungee', sans-serif;
-  font-size: 24px;
+  font-size: 30px;
+  padding: 20px;
 }
 
 p{
   font-family: 'Questrial', sans-serif;
   color: #fff;
-  font-size: 18px;
+  font-size: 24px;
+  padding: 20px;
 }
 
 /* Header */
@@ -59,7 +61,7 @@ p{
 }
 
 .background-image {
-  background-image: linear-gradient(#000000,  transparent), url("/img/tay-rep.jpg"); /* The image used */
+  background-image: url("../img/tay-rep.jpg"), linear-gradient(#b5bdc8, #28343b);  /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 500px;
   top:0;
@@ -181,6 +183,10 @@ p{
         background-color: grey;
       }
 
+#italics{
+  font-style: italic;
+}
+
 /* Copy Conclusion */
 .copy-conclusion{
   grid-area: con;
@@ -190,6 +196,12 @@ p{
   padding: 20px;
 }
 
+.copy-conclusion a{
+  color: #000;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
 /* Sources */
 .sources{
   grid-area:srcs;
@@ -300,10 +312,51 @@ p{
     'vid'
     'quo'
     'srcs';
+
+
   }
 
+  .header{
+    grid-area: hd;
+  }
 
+  .intro-text{
+    grid-area: inttxt;
+    text-align: center;
+    font-size: 40px;
+  }
 
+  .copy-1{
+    grid-area: c1;
+  }
+
+  .lyrics-api{
+    grid-area: ly;
+  }
+
+  .copy-2{
+    grid-area: c2;
+  }
+
+  .youtube-api{
+    grid-area: vid;
+  }
+
+  .copy-3{
+    grid-area: c3;
+  }
+
+  .googlemaps-api{
+    grid-area: mp;
+  }
+
+  .quote{
+    grid-area: quo;
+  }
+
+  .sources{
+    grid-area: srcs;
+  }
 
 
 }
